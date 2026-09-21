@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    font-size: clamp(10px, 4vw, 30px);
+}
+
+main a{
+    text-decoration: none;
+}
+
+main h1, p, h2, h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+main p{
+    color: black;
+}
+
+main{
+    background-color: #D9D9D9;
+    padding: 7%;
+    letter-spacing: 1.5px;
+}
+
+.header p{
+    padding: 1% 0% 9% 0%;
+}
+
+.projres, .projcomer{
+    display: flex;
+    flex-direction: column;
+}
+
+.projres h3, .projcomer h3{
+    padding: 0% 10% 0% 10%; 
+}
+
+.projres p, .projcomer p{
+    padding: 1% 5% 5% 10%; 
+}
+
+.projres h2, .projcomer h2{
+    padding: 0% 0% 5% 0%; 
+}
+
+
+main h1, h2, h3{
+    color: #A2602E;
+}
+
+main img{
+    width: 80%;
+    height: auto;
+    margin: 0% 10%;
+    filter: brightness(93%);
+}
+
+footer{
+    background-color: #3B2A23;
+    height: 20vh;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+}
+
+footer div{
+    display: inline-flex;
+    gap: 60px;
+}
+
+footer img{
+    width: 30px;
+    height: auto;
+}
+
+footer span{
+    font-size: 10px;
+    color: white;
+}
+
+footer a{
+    width: 60px;
+    height: 45px; /* define uma área real */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+}
+

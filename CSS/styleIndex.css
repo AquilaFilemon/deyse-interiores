@@ -1,0 +1,196 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/*Estilizando o Header*/
+
+header{
+        font-size: clamp(20px, 7vw, 30px);
+}
+
+.hero{
+    position: relative;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../img/carrossel_1.jpg");
+    background-position: 95% center;
+    height: 100vh;
+}
+
+.content{
+    color: #fff;
+    padding: 25vh 2vh;
+    letter-spacing: 2px;
+}
+
+.bnt{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;        /* aumenta altura e largura */
+    border-radius: 40px;       /* deixa bem arredondado */
+    font-weight: 600;          /* texto mais forte */
+    font-size: 3vh;
+    letter-spacing: 2px;
+
+    background: rgba(255,255,255,0.2); /* transparência */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* suporte Safari */
+}
+
+.buttons{
+    padding: 10vh 0vh;
+}
+
+.bnt.primary{
+    border: 2px solid white;    /* borda mais grossa */
+    font-weight: 800;
+}
+
+.bnt.secundary{
+    margin: 2%;
+}
+
+/*Estilizando o Main Quem Projeta*/
+
+main{
+    background-color: #F6ECE3;
+}
+
+.sectionMain1{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: clamp(20px, 6vw, 30px);
+}
+
+h1{
+    margin: 0;
+    width: 80%;
+}
+
+.mainText h1{
+    padding: 5%;
+    color: #A2602E;
+}
+
+.mainText p{
+    width: 70%;
+    margin: auto;
+    padding: 5% 0 0 0;
+}
+
+#imgMain{
+    display: block; /*Isso faz o container acabar assim que a imagem acaba*/
+    width: 100%;
+    height: auto;
+    margin: auto;   
+}
+
+@media (min-width: 768px){
+    #imgMain{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1025px) { 
+    #imgMain{
+        width: 35%;
+    }
+
+}
+
+@media (min-width: 1026px) {
+     #imgMain{
+        width: 30%;
+    }
+}
+
+
+/*Estilizando o Main Avaliações*/
+
+.feedback{
+    background-color: #E9DED6;
+    width: 100%;
+}
+
+.cards{
+        display: grid; /*Transforma transforma o containe em grade (linhas e colunas)*/
+        font-size: clamp(20px, 5vw, 30px);
+}
+
+@media (min-width: 768px){
+    .cards{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+.feedback h1{
+    color: #A2602E;
+    padding: 2%;
+}
+
+.card{
+    width: 250px;
+    background-color: white;
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: clamp(10px, 1vw, 15px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.stars{
+    color: #f5a623;
+    font-size: 18px;
+}
+
+.card p{
+    font-weight: 600;
+}
+
+.card span{
+    color: #666;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+footer{
+    background-color: #3B2A23;
+    height: 10vh;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+}
+
+footer div{
+    display: inline-flex;
+    gap: 60px;
+}
+
+footer img{
+    width: 30px;
+    height: auto;
+}
+
+footer span{
+    font-size: 10px;
+    color: white;
+}
+
+footer a{
+    width: 60px;
+    height: 45px; /* define uma área real */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+}
